@@ -13,4 +13,70 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--main-text-weight);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: var(--header-width);
+  align-items: center;
+}
+
+.border_block {
+  border: 2px solid #000;
+}
+
+.header_title {
+
+}
+
+.header_text {
+
+}
+
+.main {
+  
+}
+
+.card_list {
+
+}
+
+.card_item {
+
+}
+
+.card_content {
+
+}
+
+.article_title {
+
+}
+
+.card_picture {
+
+}
+
+.picture_image {
+
+}
+
+.image-tag {
+
+}
+
+.article_text {
+
+}
+
+.card_buttons {
+
+}
+ 
+@media (width <= 375px) {
+
 }
