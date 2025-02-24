@@ -1,16 +1,17 @@
-:root{
+:root {
 
---main-font: 'Inter';
---accent-font: 'PressStart2P';
---main-text-weight: 400;
---title-text-weight: 700;
---card-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
---header-text-font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
---header-title-font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);`
---accent-color: #fff;
---bg-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
---bg-color: #fff;
-
+    --main-font: 'Inter';
+    --accent-font: 'PressStart2P';
+    --main-text-weight: 400;
+    --title-text-weight: 700;
+    --card-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --header-text-font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
+    --header-title-font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
+    --border-color: #000;
+    --accent-color: #fff;
+    --like-accent-color: #FF0000;
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    --bg-color: #fff;
 }

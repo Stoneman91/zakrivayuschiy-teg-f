@@ -37,16 +37,17 @@
   gap: 20px;
   inline-size: var(--card-width);
   align-items: center;
-  padding: 120px 14px;
+  padding: clamp(7.5rem, 0.751vw + 7.324rem, 8rem) clamp(0.875rem, 9.953vw - 1.458rem, 7.5rem);
   margin-block-end: 100px;
   background-color: var(--bg-color);
 }
 
 .border_block {
-  outline: 2px var(--accent-color) solid;
+  outline: 2px solid var(--border-color);
 }
 
 .header_title {
+  font-size: var(--header-title-font-size);
   font-weight: var(--title-text-weight);
   font-family: 'Press Start 2P', sans-serif;
   line-height: 49px;
@@ -56,7 +57,7 @@
 .header_text {
   font-weight: var(--title-text-weight);
   font-family: 'Press Start 2P', sans-serif;
-  font-size: 14px;
+  font-size: var(--header-text-font-size);
   line-height: 14px;
   text-transform: uppercase;
 }
@@ -71,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  inline-size: var(--card-width);
 }
 
 .card_item {
@@ -78,45 +80,49 @@
 }
 
 .card_content {
-  background-color: var(--bg-color);
+  font-size: 18px;
 }
 
-.article_title {}
+.article_title {
+  padding: 5px 10px;
+  font-size: inherit;
+  border-block-end: 2px solid var(--border-color);
+  font-variation-settings: "wght" var(--title-text-weight);
+}
 
 .card_picture {
-  position: relative;`
+  position: relative;
   line-height: 0;
   background-color: var(--bg-color);
+  border-block-end: 2px solid var(--border-color);
 }
 
 .picture_image {
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
+  inline-size: 100%;
+  max-block-size: 100%;
+  block-size: 100%;
 }
 
 .image_tag {
   position: absolute;
   mix-blend-mode: hard-light;
+  text-transform: uppercase;
   inset-block-start: clamp(1.875rem, 1.831rem + 0.1878vw, 2rem);
   inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
-  color: color-mix(in srgb, var(--accent-color) 50%, transparent);
+  color: color-mix(in srgb, var(--border-color 50%, transparent));
   text-shadow: -1px 0 color-mix(in srgb, var(--accent-color) 50%, transparent),
     0 1px color-mix(in srgb, var(--accent-color) 50%, transparent),
     1px 0 color-mix(in srgb, var(--accent-color) 50%, transparent),
     0 -1px color-mix(in srgb, var(--accent-color) 50%, transparent);
-  font-family: var(--accent-font), fantasy, sans-serif;
-  font-size: var(--main-text-size);
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 14px;
 }
 
-@supports (
-  (text-stroke: 1px #000000) or
-    (
-      -webkit-text-stroke: 1px color-mix(in srgb, var(--accent-color) 50%, transparent)
-    )
-) {
+@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px color-mix(in srgb, var(--accent-color) 50%, transparent))) {
   .image-tag {
-    -webkit-text-stroke: 1px
-    text-shadow: none;
+    -webkit-text-stroke: 1px text-shadow: none;
     text-stroke: 1px color-mix(in srgb, var(--accent-color) 50%, transparent);
     color-mix(in srgb, var(--accent-color) 50%, transparent);
   }
@@ -133,13 +139,13 @@
 .dialog[open] {
   display: flex;
   position: fixed;
+  align-items: center;
+  justify-content: center;
   inset: 0;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   row-gap: 30px;
   column-gap: 20px;
-  padding-block: 25px;
+  padding: 25px 0px;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 }
 
@@ -148,10 +154,11 @@
 }
 
 .dialog_description {
-  font-family: var(--accent-font),sans-serif;
+  font-family: var(--accent-font), sans-serif;
   line-height: 150%;
   inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
 }
+
 .dialog .button-save__icon {
   inline-size: 39px;
   block-size: 39px;
@@ -163,9 +170,14 @@
   inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
-dialog:not([open]) {
+.dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
 }
 
-@media (width <=375px) {}
+@media (width <=375px) {
+  .button-save__icon {
+    block-size: 28px;
+    inline-size: 28px;
+  }
+}
