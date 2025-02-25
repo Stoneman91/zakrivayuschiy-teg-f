@@ -45,14 +45,14 @@
 .header_title {
   font-size: var(--header-title-font-size);
   font-weight: var(--title-text-weight);
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--accent-font), sans-serif;
   line-height: 49px;
   text-transform: uppercase;
 }
 
 .header_text {
   font-weight: var(--title-text-weight);
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--header-text-font-size);
   line-height: 14px;
   text-transform: uppercase;
