@@ -173,12 +173,12 @@
   filter: contrast(250%);
 }
 
-.fil_hue-rotate {
-  filter: hue-rotate(0.4turn);
+.fil_opacity {
+  filter: opacity(0.6);
 }
 
 .fil_invert {
-  filter: invert(130%) brightness(2);
+  filter: invert(100%);
 }
 
 .fil_saturate {
