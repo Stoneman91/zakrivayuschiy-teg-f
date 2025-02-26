@@ -116,6 +116,14 @@
   font-family: var(--accent-font), sans-serif;
 }
 
+@supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
+  .image_tag {
+    text-stroke: 1px var(--accent-color-color);
+    -webkit-text-stroke: 1px var(--accent-color-color);
+    text-shadow: none;
+  }
+}
+
 .article_text {
   font-size: 18px;
   line-height: 21px;
@@ -150,23 +158,23 @@
 }
 
 .fil_grayscale {
-  filter: grayscale(0.8);
+  filter: grayscale(1) 
 }
 
 .fil_blur {
   filter: blur(1px);
 }
 
-.fil_brightness {
-  filter: brightness(0.8);
+.fil_sepia {
+  filter: sepia(0.75)
 }
 
 .fil_contrast {
-  filter: contrast(0.4);
+  filter: contrast(250%);
 }
 
 .fil_hue-rotate {
-  filter: hue-rotate(0.3turn);
+  filter: hue-rotate(0.4turn);
 }
 
 .fil_invert {
@@ -174,7 +182,7 @@
 }
 
 .fil_saturate {
-  filter: saturate(0.6) brightness(0.8);
+  filter: saturate(400%) brightness(0.8);
 }
 
 .button {
@@ -182,22 +190,22 @@
   font-family: var(--accent-font-), sans-serif;
   font-size: var(--main-text-size);
   color: var(--accent-color);
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 
 
-.floppy_button svg {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  mix-blend-mode: difference;
-  gap: 8px;
-  padding: 15px 10px;
+.floppy_button {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  padding: 15px 15px;
 }
 
 .floppy_button_icon {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   width: 21px;
+  height: 21px;
   mix-blend-mode: difference;
 }
 
