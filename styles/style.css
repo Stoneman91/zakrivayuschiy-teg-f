@@ -68,6 +68,7 @@
   flex-direction: column;
   gap: 50px;
   inline-size: var(--card-width-mob);
+  margin-block-end: 50px;
 }
 
 .card_item {
@@ -127,13 +128,6 @@
   font-weight: var(--main-text-weight);
 }
 
-.card_footer_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 12px;
-}
-
 .card__like-button {
   padding: 10px;
   inline-size: 130px;
@@ -173,6 +167,13 @@
   transition: fill 0.3s linear;
 }
 
+.card_footer_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
 .fil_grayscale {
   filter: grayscale(0.8);
 }
@@ -208,7 +209,7 @@
   border: none;
   overflow: hidden;
   color: var(--accent-color);
-  background-color: inherit;
+  background-color: var(--bg-color);
   transition: box-shadow 0.3s ease-in-out;
   font-family: var(--accent-font-), sans-serif;
   font-size: var(--main-text-size);
