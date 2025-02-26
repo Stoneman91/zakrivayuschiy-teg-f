@@ -118,7 +118,6 @@
 
 @supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
   .image_tag {
-    text-stroke: 1px var(--accent-color-color);
     -webkit-text-stroke: 1px var(--accent-color-color);
     text-shadow: none;
   }
