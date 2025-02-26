@@ -158,7 +158,7 @@
 }
 
 .fil_grayscale {
-  filter: grayscale(1) 
+  filter: grayscale(1);
 }
 
 .fil_blur {
@@ -166,7 +166,7 @@
 }
 
 .fil_sepia {
-  filter: sepia(0.75)
+  filter: sepia(0.75);
 }
 
 .fil_contrast {
@@ -178,7 +178,7 @@
 }
 
 .fil_invert {
-  filter: invert(0.8);
+  filter: invert(130%) brightness(2);
 }
 
 .fil_saturate {
