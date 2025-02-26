@@ -205,7 +205,6 @@
   z-index: 2;
   width: 21px;
   height: 21px;
-  mix-blend-mode: difference;
 }
 
 .button__text {
