@@ -194,8 +194,9 @@
 
 
 .floppy_button {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  justify-self: center;
   gap: 8px;
   background-color: var(--bg-color);
   color: var(--accent-color);
@@ -205,6 +206,7 @@
 
 .floppy_button_icon {
   position: relative;
+  justify-self: center;
   z-index: 2;
   width: 21px;
   height: 21px;
@@ -222,12 +224,12 @@
 
 .dialog[open] {
   display: flex;
-  row-gap: 30px;
   column-gap: 20px;
-  padding: 30px;
+  row-gap: 30px;
   position: fixed;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   flex-wrap: wrap;
 }
@@ -242,16 +244,14 @@
   inline-size: clamp(14.143rem, 11.215vw + 11.139rem, 16.714rem)
 }
 
-.dialog .button-save__icon {
+.dialog .floppy_button_icon {
   inline-size: 39px;
   block-size: 39px;
 }
 
 .dialog_button {
-  grid-row: 3 / 3;
   padding-block: 12.5px;
-  inline-size:  clamp(18.357rem, 11.215vw + 15.353rem, 20.929rem)
-  
+  inline-size: clamp(18.357rem, 11.215vw + 15.353rem, 20.929rem);
 }
 
 .dialog:not([open]) {
