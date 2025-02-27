@@ -181,7 +181,7 @@
 }
 
 .fil_saturate {
-  filter: saturate(400%);
+  filter: saturate(400%) brightness(120%);
 }
 
 .button {
