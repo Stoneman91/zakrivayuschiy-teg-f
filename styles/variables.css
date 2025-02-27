@@ -4,8 +4,7 @@
     --accent-font: 'PressStart2P';
     --main-text-weight: 400;
     --title-text-weight: 700;
-    --card-width-mob: 100%;
-    --card-width-desk: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --card-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     --header-text-font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
     --header-title-font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
     --border-color: #000;
