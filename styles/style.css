@@ -194,7 +194,7 @@
 .floppy_button {
   display: flex;
   flex-wrap: wrap;
-  justify-self: center;
+  justify-content: center;
   gap: 8px;
   background-color: var(--bg-color);
   color: var(--accent-color);
@@ -204,7 +204,6 @@
 
 .floppy_button_icon {
   position: relative;
-  justify-self: center;
   z-index: 2;
   width: 21px;
   height: 21px;
@@ -259,4 +258,11 @@
 .dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
+}
+
+@media (width > 375px) {
+  .floppy_button_icon {
+    width: 28px;
+    height: 28px;
+}
 }
