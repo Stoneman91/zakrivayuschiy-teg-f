@@ -88,6 +88,7 @@
 .card_picture {
   display: block;
   position: relative;
+  z-index: 2;
   line-height: 0;
   background-color: var(--bg-color);
 }
@@ -223,7 +224,7 @@
 }
 
 .floppy_button {
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -237,7 +238,7 @@
 
 .floppy_button_icon {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   mix-blend-mode: difference;
   inline-size: 21px;
   block-size: 21px;
@@ -263,6 +264,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 }
 
