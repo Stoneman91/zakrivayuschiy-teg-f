@@ -101,6 +101,7 @@
 }
 
 .image_tag {
+  content:"";
   position: absolute;
   mix-blend-mode: hard-light;
   text-transform: uppercase;
