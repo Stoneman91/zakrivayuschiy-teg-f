@@ -220,6 +220,7 @@
 }
 
 .dialog[open] {
+  padding: 30px;
   display: flex;
   row-gap: 30px;
   position: fixed;
@@ -260,9 +261,19 @@
   opacity: 0;
 }
 
-@media (width > 375px) {
+@media (width <= 375px) {
+
   .floppy_button_icon {
     width: 28px;
     height: 28px;
+  }
+  
+  .header {
+    width: 100%;
+  }
+
+  .card_list {
+    width: 100%;
+  }
 }
-}
+
