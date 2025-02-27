@@ -110,11 +110,6 @@
   text-shadow: 1px 1px 0px var(--accent-color), -1px 1px 0px var(--accent-color), -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color);
 }
 
-mix-blend-mode: hard-light;
-font-family: var(--accent-font),
-sans-serif;
-}
-
 @supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
   .image_tag {
     -webkit-text-stroke: 1px var(--accent-color-color);
