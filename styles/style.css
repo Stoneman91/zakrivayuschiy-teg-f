@@ -254,6 +254,10 @@
   inline-size: clamp(18.357rem, 11.215vw + 15.353rem, 20.929rem);
 }
 
+.dialog_container {
+  display: flex;
+}
+
 .dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
