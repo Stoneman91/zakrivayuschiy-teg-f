@@ -221,10 +221,10 @@
 }
 
 .dialog[open] {
-  display: grid;
+  display: flex;
   row-gap: 30px;
   column-gap: 20px;
-  padding: 25px 0px;
+  padding: 30px;
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -248,6 +248,7 @@
 }
 
 .dialog_button {
+  grid-row: 3 / 3;
   padding-block: 12.5px;
   inline-size:  clamp(18.357rem, 11.215vw + 15.353rem, 20.929rem)
   
