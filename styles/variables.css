@@ -5,7 +5,7 @@
     --main-text-weight: 400;
     --title-text-weight: 700;
     --header-title-font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
-    --header-text-font-size:  clamp(clamp(0.875rem, 0.845vw + 0.677rem, 1.44rem););
+    --header-text-font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.44rem);
     --border-color: #000;
     --accent-color: #fff;
     --card-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);

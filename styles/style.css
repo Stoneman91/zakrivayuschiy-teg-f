@@ -104,14 +104,15 @@
   position: absolute;
   mix-blend-mode: hard-light;
   text-transform: uppercase;
+  font-family: var(--accent-font), sans-serif;
   inset-block-start: clamp(1.875rem, 1.831rem + 0.1878vw, 2rem);
   inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
-  color: color-mix(in srgb, var(--border-color 50%, transparent));
-  text-shadow: -1px 0 color-mix(in srgb, var(--accent-color) 50%, transparent),
-    0 1px color-mix(in srgb, var(--accent-color) 50%, transparent),
-    1px 0 color-mix(in srgb, var(--accent-color) 50%, transparent),
-    0 -1px color-mix(in srgb, var(--accent-color) 50%, transparent);
-  font-family: var(--accent-font), sans-serif;
+  text-shadow: 1px 1px 0px var(--accent-color), -1px 1px 0px var(--accent-color), -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color);
+}
+
+mix-blend-mode: hard-light;
+font-family: var(--accent-font),
+sans-serif;
 }
 
 @supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
@@ -140,7 +141,6 @@
   padding: 0;
   margin: 0;
   background-color: transparent;
-  transition: outline 0.3s linear;
   cursor: pointer;
   max-block-size: 38px;
 }
@@ -150,7 +150,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid currentColor;
+  border: 2px solid var(---border-color);
 }
 
 .card_footer_buttons {
@@ -160,6 +160,56 @@
   gap: 6px;
   padding-inline-end: 25px;
   padding-block: 25px;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon:hover .core {
+  fill: var(--border-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--border-color);
+  transition: fill 0.3s linear;
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--like-accent-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--like-accent-color);
+  transition: fill 3s linear;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--like-accent-color);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--like-accent-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--like-accent-color);
+  transition: fill 0.5s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: scale 0.3s linear 0.1s;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: fill 0.3s linear 0.3s;
+  transform-origin: center;
 }
 
 .fil_grayscale {
