@@ -42,7 +42,7 @@
 }
 
 .header_title {
-  font-family: var(--accent-font), sans-serif; 
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--header-title-font-size);
   font-weight: var(--title-text-weight);
   line-height: 49px;
@@ -144,6 +144,14 @@
   max-block-size: 38px;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid currentColor;
+}
+
 .card_footer_buttons {
   display: flex;
   align-items: center;
@@ -183,11 +191,36 @@
 
 .button {
   position: relative;
-  font-family: var(--accent-font-), sans-serif;
+  overflow: auto;
+  font-family: var(--accent-font), sans-serif;
   font-size: var(--main-text-size);
   color: var(--accent-color);
   background-color: var(--bg-color);
   cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--border-color)
+  transition: box-shadow 0.3s ease;
 }
 
 
@@ -204,12 +237,15 @@
 
 .floppy_button_icon {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  mix-blend-mode: difference;
   width: 21px;
   height: 21px;
 }
 
 .button__text {
+  position: relative;
+  z-index: 1;
   line-height: 12.6px;
   font-size: 14px;
   font-weight: var(--main-text-weight);
@@ -221,6 +257,7 @@
 
 .dialog[open] {
   padding: 30px;
+  inset: 0;
   display: flex;
   row-gap: 30px;
   position: fixed;
@@ -228,7 +265,6 @@
   justify-content: center;
   flex-wrap: wrap;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  flex-wrap: wrap;
 }
 
 .dialog::backdrop {
@@ -261,13 +297,13 @@
   opacity: 0;
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
 
   .floppy_button_icon {
     width: 28px;
     height: 28px;
   }
-  
+
   .header {
     width: 100%;
   }
@@ -276,4 +312,3 @@
     width: 100%;
   }
 }
-
