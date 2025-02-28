@@ -45,7 +45,7 @@
   font-family: var(--accent-font), fantasy, sans-serif;
   font-size: var(--header-title-font-size);
   font-weight: var(--title-text-weight);
-  line-height: 49px;
+  line-height: 65px;
   text-transform: uppercase;
 }
 
@@ -80,7 +80,9 @@
 
 .article_title {
   padding: 3px 10px;
-  font-size: inherit;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: var(--border-color);
   border-block-end: 2px solid var(--border-color);
   font-variation-settings: "wght" var(--title-text-weight);
 }
@@ -126,6 +128,7 @@
   z-index: 2;
   font-size: 18px;
   line-height: 21px;
+  font-family: var(--main-font);
   font-weight: var(--main-text-weight);
   margin-block-start: 25px;
   padding-inline: 25px;
@@ -320,6 +323,8 @@
 
 .dialog_text {
   font-family: var(--accent-font), fantasy, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 21px;
   inline-size: clamp(14.143rem, 11.215vw + 11.139rem, 16.714rem)
 }
@@ -355,6 +360,10 @@
     inline-size: 100%;
   }
 
+  .header_title {
+    line-height: 49px;
+  }
+  
   .card_list {
     inline-size: 100%;
   }
