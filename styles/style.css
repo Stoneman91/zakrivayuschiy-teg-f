@@ -279,9 +279,7 @@
   background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 51px;
-  mix-blend-mode: difference;
 }
-
 
 .floppy_button_icon {
   position: relative;
