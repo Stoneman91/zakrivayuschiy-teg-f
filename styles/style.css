@@ -95,6 +95,7 @@
 
 .picture_image {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   max-block-size: 100%;
   block-size: 100%;
@@ -103,6 +104,7 @@
 .image_tag {
   content:"";
   position: absolute;
+  opacity: 0.5;
   mix-blend-mode: hard-light;
   text-transform: uppercase;
   font-family: var(--accent-font), sans-serif;
@@ -111,7 +113,8 @@
   text-shadow: 1px 1px 0px var(--accent-color), -1px 1px 0px var(--accent-color), -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color);
 }
 
-@supports((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
+@supports ((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
+
   .image_tag {
     -webkit-text-stroke: 1px var(--accent-color-color);
     text-shadow: none;
@@ -139,6 +142,7 @@
   background-color: transparent;
   cursor: pointer;
   max-block-size: 38px;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -180,31 +184,35 @@
 
 .like-icon:active .main-body {
   fill: var(--like-accent-color);
-  transition: fill 3s linear;
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--like-accent-color);
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--like-accent-color);
   transition: fill 0.3s linear;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--like-accent-color);
-  transition: fill 0.5s linear;
+  transition: fill 0.3s linear;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.3s linear 0.1s;
+  transition: scale 0.3s linear;
   transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  animation: fill 0.3s linear 0.3s;
+  fill: var(-like-accent-color)
+  transition: fill 0.3s linear;
   transform-origin: center;
 }
 
@@ -243,7 +251,7 @@
   font-size: var(--main-text-size);
   color: var(--accent-color);
   background-color: var(--bg-color);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
