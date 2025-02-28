@@ -273,11 +273,10 @@
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 8px;
   background-color: var(--bg-color);
-  color: var(--accent-color);
-  padding: 15px 15px;
   min-inline-size: 335px;
   min-block-size: 51px;
 }
@@ -285,9 +284,10 @@
 .floppy_button_icon {
   position: relative;
   z-index: 2;
-  mix-blend-mode: difference;
   inline-size: 21px;
   block-size: 21px;
+  color: var(--bg-color);
+  mix-blend-mode: difference;
 }
 
 .button__text {
