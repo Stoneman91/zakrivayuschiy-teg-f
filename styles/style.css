@@ -293,7 +293,7 @@
 
 .floppy_button_icon {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
   mix-blend-mode: difference;
