@@ -294,8 +294,7 @@
   z-index: 3;
   inline-size: 21px;
   block-size: 21px;
-  color: #ffffff;
-  mix-blend-mode: difference;
+  color: var(--accent-color);
 }
 
 
