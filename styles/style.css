@@ -331,8 +331,8 @@
   font-family: var(--accent-font), fantasy, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+  inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   line-height: 21px;
-  inline-size: clamp(14.143rem, 11.215vw + 11.139rem, 16.714rem)
 }
 
 .dialog .floppy_button_icon {
@@ -341,8 +341,8 @@
 }
 
 .dialog_button {
-  padding-block: 12.5px;
-  inline-size: clamp(18.357rem, 11.215vw + 15.353rem, 20.929rem);
+  padding-block: 12px;
+  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
 .dialog_container {
