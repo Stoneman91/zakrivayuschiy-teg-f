@@ -252,13 +252,21 @@
 
 .button {
   position: relative;
-  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   font-family: var(--accent-font), fantasy, sans-serif;
   font-size: var(--main-text-size);
   color: var(--accent-color);
-  background-color: var(--bg-color);
+  background-color: transparent;
+  border: 2px solid var(--border-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.button svg {
+  position: relative;
+  mix-blend-mode: difference;
 }
 
 .button::before {
@@ -272,15 +280,16 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
+  translate: -100%;
 }
 
 .button:hover::before {
   transform: scaleX(1);
+  translate: 0%;
 }
 
 .floppy_button {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
