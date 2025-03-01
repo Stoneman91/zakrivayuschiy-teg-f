@@ -269,7 +269,7 @@
 
 .button svg {
   position: relative;
-  mix-blend-mode: difference;
+ mix-blend-mode: difference;
 }
 
 .button::before {
@@ -286,6 +286,7 @@
 
 .floppy_button {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -298,6 +299,7 @@
 
 .floppy_button_icon {
   position: relative;
+  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
 }
@@ -305,6 +307,7 @@
 
 .button__text {
   position: relative;
+  z-index: 2;
   line-height: 12.6px;
   font-size: 14px;
   font-weight: var(--main-text-weight);
