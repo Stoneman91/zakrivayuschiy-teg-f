@@ -285,9 +285,9 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 55px;
+  mix-blend-mode: difference;
 }
 
 .floppy_button_icon {
@@ -295,8 +295,7 @@
   z-index: 2;
   inline-size: 21px;
   block-size: 21px;
-  background-color: var(--bg-color);
-  color: var(--border-color);
+  mix-blend-mode: difference;
 }
 
 .button__text {
