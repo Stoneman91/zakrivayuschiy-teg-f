@@ -280,6 +280,7 @@
 
 .floppy_button {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -293,7 +294,7 @@
 
 .floppy_button_icon {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   inline-size: 21px;
   block-size: 21px;
   mix-blend-mode: difference;
