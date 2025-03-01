@@ -38,7 +38,7 @@
 }
 
 .border_block {
-  border: 2px solid var(--border-color);
+  outline: 2px solid var(--border-color);
 }
 
 .header_title {
