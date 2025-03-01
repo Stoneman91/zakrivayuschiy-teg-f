@@ -298,9 +298,9 @@
 
 .floppy_button_icon {
   position: relative;
-  color: var(--accent-color);
   inline-size: 21px;
   block-size: 21px;
+  mix-blend-mode: difference;
 }
 
 
