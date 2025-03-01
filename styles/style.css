@@ -296,9 +296,6 @@
   block-size: 21px;
 }
 
-.floppy_button .floppy_button_icon {
-  mix-blend-mode: difference;
-}
 
 .button__text {
   position: relative;
