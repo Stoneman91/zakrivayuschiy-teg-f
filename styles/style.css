@@ -285,7 +285,6 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding-inline: 42px;
   background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 55px;
@@ -349,6 +348,7 @@
 .dialog_container {
   display: flex;
   gap: 20px;
+  padding-inline: 42px;
 }
 
 .dialog:not([open]) {
