@@ -292,7 +292,6 @@
 
 .floppy_button_icon {
   position: relative;
-  z-index: 1;
   inline-size: 21px;
   block-size: 21px;
   color: #ffffff;
