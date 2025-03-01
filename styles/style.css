@@ -15,7 +15,7 @@
   justify-items: center;
   padding: 100px 0px;
   font-size: 14px;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), Geneva, sans-serif;
   font-variation-settings: "wght" var(--main-text-weight);
   background-image: var(--bg-image);
   background-color: var(--bg-color);
@@ -79,10 +79,11 @@
 }
 
 .article_title {
-  padding: 3px 10px;
+  padding: 4px 10px 6px 10px;
   font-size: 18px;
   line-height: 21.78px;
   color: var(--border-color);
+  background-color: var(--bg-color);
   border-block-end: 2px solid var(--border-color);
   font-variation-settings: "wght" var(--title-text-weight);
 }
@@ -128,7 +129,7 @@
   z-index: 2;
   font-size: 18px;
   line-height: 21px;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Geneva, sans-serif;
   font-weight: var(--main-text-weight);
   margin-block-start: 25px;
   padding-inline: 25px;
@@ -146,16 +147,19 @@
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
   border: none;
   padding: 0;
   margin: 0;
   background-color: transparent;
   cursor: pointer;
   block-size: 38px;
-  transition: border 0.3s ease;
 }
 
 .card_footer_buttons {
@@ -349,6 +353,15 @@
   opacity: 0;
 }
 
+.pixel-perfect-image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+
 @media (width <=375px) {
 
   .floppy_button_icon {
@@ -366,5 +379,12 @@
   
   .card_list {
     inline-size: 100%;
+  }
+
+  .floppy_button {
+    flex-direction: column;
+}
+  .article_title {
+    max-inline-size: 351px;
   }
 }
