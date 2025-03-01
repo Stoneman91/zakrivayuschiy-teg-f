@@ -323,7 +323,6 @@
   row-gap: 30px;
   position: fixed;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
