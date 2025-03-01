@@ -279,12 +279,12 @@
 }
 
 .floppy_button {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 55px;
 }
@@ -295,6 +295,7 @@
   inline-size: 21px;
   block-size: 21px;
   mix-blend-mode: difference;
+  color: var(--bg-color);
 }
 
 
