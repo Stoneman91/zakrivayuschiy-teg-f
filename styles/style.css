@@ -294,6 +294,9 @@
   z-index: 2;
   inline-size: 21px;
   block-size: 21px;
+}
+
+.floppy_button .floppy_button_icon {
   mix-blend-mode: difference;
 }
 
