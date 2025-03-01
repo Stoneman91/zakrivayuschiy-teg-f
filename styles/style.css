@@ -286,7 +286,7 @@
   gap: 8px;
   background-color: var(--bg-color);
   min-inline-size: 335px;
-  min-block-size: 51px;
+  min-block-size: 55px;
 }
 
 .floppy_button_icon {
@@ -375,6 +375,8 @@
 
   .floppy_button {
     flex-direction: column;
+    min-inline-size: 306px;
+    min-block-size: 84px;
 }
   .article_title {
     max-inline-size: 351px;
