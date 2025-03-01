@@ -279,7 +279,7 @@
 }
 
 .floppy_button {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -296,6 +296,7 @@
   inline-size: 21px;
   block-size: 21px;
   color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 
