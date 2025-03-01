@@ -79,7 +79,7 @@
 }
 
 .article_title {
-  padding: 4px 10px 6px 10px;
+  padding: 5px 10px;
   font-size: 18px;
   line-height: 21.78px;
   color: var(--border-color);
@@ -128,6 +128,7 @@
   position: relative;
   z-index: 2;
   font-size: 18px;
+  word-spacing: 4.5px;
   line-height: 21px;
   font-family: var(--main-font), Geneva, sans-serif;
   font-weight: var(--main-text-weight);
