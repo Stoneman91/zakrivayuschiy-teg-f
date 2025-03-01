@@ -291,16 +291,16 @@
 
 .floppy_button_icon {
   position: relative;
+  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
-  color: var(--accent-color);
   mix-blend-mode: difference;
 }
 
 
 .button__text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   line-height: 12.6px;
   font-size: 14px;
   font-weight: var(--main-text-weight);
