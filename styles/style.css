@@ -258,10 +258,13 @@
   font-family: var(--accent-font), fantasy, sans-serif;
   font-size: var(--main-text-size);
   color: var(--accent-color);
-  background-color: var(--bg-color);
+  background-color: transparent;
   border: 2px solid var(--border-color);
-  transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.button:hover:before {
+  transform: scaleX(1);
 }
 
 .button svg {
@@ -279,11 +282,6 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
-  translate: -100%;
-}
-
-.button:hover::before {
-  translate: 0%;
 }
 
 .floppy_button {
@@ -293,12 +291,14 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 55px;
 }
 
 .floppy_button_icon {
   position: relative;
+  color: var(--accent-color);
   inline-size: 21px;
   block-size: 21px;
 }
