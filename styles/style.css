@@ -287,7 +287,6 @@
   gap: 8px;
   min-inline-size: 335px;
   min-block-size: 55px;
-  mix-blend-mode: difference;
 }
 
 .floppy_button_icon {
@@ -295,6 +294,7 @@
   z-index: 2;
   inline-size: 21px;
   block-size: 21px;
+  mix-blend-mode: difference;
 }
 
 
