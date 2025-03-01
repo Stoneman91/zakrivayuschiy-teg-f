@@ -111,6 +111,7 @@
   mix-blend-mode: hard-light;
   text-transform: uppercase;
   font-family: var(--accent-font), fantasy, sans-serif;
+  font-size: 14px;
   inset-block-start: clamp(1.875rem, 1.831rem + 0.1878vw, 2rem);
   inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   text-shadow: 1px 1px 0px var(--accent-color), -1px 1px 0px var(--accent-color), -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color);
@@ -284,6 +285,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  padding-inline: 42px;
   background-color: var(--bg-color);
   min-inline-size: 335px;
   min-block-size: 55px;
