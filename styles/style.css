@@ -38,7 +38,7 @@
 }
 
 .border_block {
-  outline: 2px solid var(--border-color);
+  border: 2px solid var(--border-color);
 }
 
 .header_title {
@@ -300,7 +300,6 @@
   position: relative;
   inline-size: 21px;
   block-size: 21px;
-  mix-blend-mode: difference;
 }
 
 
