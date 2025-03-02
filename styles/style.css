@@ -120,7 +120,7 @@
 @supports ((text-stroke: 1px var(--accent-color)) or (-webkit-text-stroke: 1px var(--accent-color))) {
 
   .image_tag {
-    -webkit-text-stroke: 1px var(--accent-color-color);
+    -webkit-text-stroke: 1px var(--accent-color);
     text-shadow: none;
   }
 }
@@ -143,15 +143,6 @@
   inline-size: 130px;
 }
 
-.card__like-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 var(--border-color);
-  transition: box-shadow 0.3s ease;
-}
-
 .card__icon-button {
   display: flex;
   align-items: center;
@@ -161,7 +152,15 @@
   margin: 0;
   background-color: transparent;
   cursor: pointer;
-  block-size: 38px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+outline: 2px solid var(--border-color);
+outline-offset: -1px;
 }
 
 .card_footer_buttons {
@@ -260,6 +259,7 @@
   color: var(--accent-color);
   background-color: transparent;
   border: 2px solid var(--border-color);
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -270,6 +270,14 @@
 .button svg {
   position: relative;
  mix-blend-mode: difference;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--border-color); 
 }
 
 .button::before {
@@ -318,13 +326,12 @@
 }
 
 .dialog[open] {
-  padding: 30px 42px;
+  padding: 30px 25px;
   display: flex;
   row-gap: 30px;
   position: fixed;
   align-items: center;
   flex-wrap: wrap;
-  overflow: hidden;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 }
 
@@ -347,6 +354,7 @@
 
 .dialog_button {
   padding-block: 12px;
+  text-transform: uppercase;
   inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
