@@ -79,7 +79,8 @@
 }
 
 .article_title {
-  padding: 5px 10px;
+  padding-block: 5px;
+  padding-inline-start: 10px;
   font-size: 18px;
   line-height: 21.78px;
   color: var(--border-color);
@@ -152,15 +153,6 @@
   margin: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-outline: 2px solid var(--border-color);
-outline-offset: -1px;
 }
 
 .card_footer_buttons {
@@ -272,11 +264,11 @@ outline-offset: -1px;
  mix-blend-mode: difference;
 }
 
-.button:focus {
+.button:focus, .card__like-button:focus {
   outline: none;
 }
 
-.button:focus-visible {
+.button:focus-visible, .card__like-button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color); 
 }
 
@@ -310,6 +302,7 @@ outline-offset: -1px;
   z-index: 2;
   inline-size: 21px;
   block-size: 21px;
+  align-items: center;
 }
 
 
@@ -350,6 +343,7 @@ outline-offset: -1px;
 .dialog .floppy_button_icon {
   inline-size: 39px;
   block-size: 39px;
+  margin-block: 12px;
 }
 
 .dialog_button {
@@ -392,7 +386,4 @@ outline-offset: -1px;
     min-inline-size: 306px;
     min-block-size: 84px;
 }
-  .article_title {
-    max-inline-size: 351px;
-  }
 }
