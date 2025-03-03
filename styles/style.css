@@ -148,17 +148,20 @@
   display: flex;
   align-items: center;
   justify-self: center;
-  border: none;
   padding: 0;
   margin: 0;
+  border: none;
   background-color: transparent;
   cursor: pointer;
+  max-block-size: 38px;
+  border: 2px solid var(--accent-color);
+  transition: border 0.3s ease;
 }
 
 .card_footer_buttons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   justify-self: end;
   padding-inline-end: 25px;
   padding-block: 25px;
@@ -270,6 +273,7 @@
 
 .button:focus-visible, .card__like-button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color); 
+  border: 2px solid var(--border-color);
 }
 
 .button::before {
