@@ -106,7 +106,7 @@
 }
 
 .image_tag {
-  content:"";
+  content: "";
   position: absolute;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -270,15 +270,17 @@
 }
 
 .button svg {
- position: relative;
- mix-blend-mode: difference;
+  position: relative;
+  mix-blend-mode: difference;
 }
 
-.button:focus, .card__like-button:focus {
+.button:focus,
+.card__like-button:focus {
   outline: none;
 }
 
-.button:focus-visible, .card__like-button:focus-visible { 
+.button:focus-visible,
+.card__like-button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
   border: 2px solid var(--border-color);
 }
@@ -387,7 +389,7 @@
   .header_title {
     line-height: 49px;
   }
-  
+
   .card_list {
     inline-size: 100%;
   }
@@ -396,5 +398,5 @@
     flex-direction: column;
     min-inline-size: 306px;
     min-block-size: 84px;
-}
+  }
 }
