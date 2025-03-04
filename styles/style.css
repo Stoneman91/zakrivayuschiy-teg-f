@@ -332,10 +332,11 @@
 }
 
 .dialog[open] {
-  padding: 30px 25px;
+  padding: 30px;
   display: flex;
   row-gap: 30px;
   position: fixed;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
@@ -362,7 +363,7 @@
 .dialog_button {
   padding-block: 12px;
   text-transform: uppercase;
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  min-inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
 .dialog_container {
@@ -398,5 +399,13 @@
     flex-direction: column;
     min-inline-size: 306px;
     min-block-size: 84px;
+  }
+
+  .dialog_button {
+    min-inline-size: 257px;
+  }
+  
+  .dialog[open] {
+    padding: 30px 0px;
   }
 }
