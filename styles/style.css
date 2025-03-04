@@ -332,7 +332,7 @@
 }
 
 .dialog[open] {
-  padding: 30px;
+  padding-block: 30px;
   display: flex;
   row-gap: 30px;
   position: fixed;
@@ -402,10 +402,10 @@
   }
 
   .dialog_button {
-    min-inline-size: 257px;
+    inline-size: 257px;
   }
   
   .dialog[open] {
-    padding: 30px 0px;
+    padding-inline: 0px;
   }
 }
